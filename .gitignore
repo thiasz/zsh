@@ -1,6 +1,7 @@
 # Zsh compiled files
 *.zwc
 .zcompdump*
+.zsh_history
 
 # Auto-installed by plugin manager
 plugins/
