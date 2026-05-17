@@ -1,22 +1,21 @@
 # Better ls
-alias l='ls -lh --color'
-alias la='ls -lha --color'
-alias ll='ls -lhtr *.log --color'
-alias lt='ls -lhtr --color'
+# alias l='ls -lh --color'
+# alias la='ls -lha --color'
+# alias ll='ls -lhtr *.log --color'
+# alias lt='ls -lhtr --color'
 
-# alias ls='eza --icons'
-
+alias ll='eza --icons'
 # Detailed listing
-# alias ll='eza -lh --icons --git'
+alias l='eza -lh --icons --git'
 
 # Detailed listing including hidden files
-# alias la='eza -lah --icons --git'
+alias la='eza -lah --icons --git'
 
 # Tree view
-# alias tree='eza --tree --icons'
+alias tree='eza --tree --icons'
 
 # Reuse ls completions for eza (avoids defining a separate completion function)
-# compdef eza=ls
+compdef eza=ls
 
 # Better cat
 # alias cat='bat'
