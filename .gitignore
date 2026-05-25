@@ -2,7 +2,6 @@
 *.zwc
 .zcompdump*
 .zsh_history
-.zprofile
 .zsh_sessions/
 
 # Auto-installed by plugin manager
