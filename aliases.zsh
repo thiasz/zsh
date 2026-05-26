@@ -1,16 +1,9 @@
 # Better ls
-# alias l='ls -lh --color'
-# alias la='ls -lha --color'
-# alias ll='ls -lhtr *.log --color'
-# alias lt='ls -lhtr --color'
-
-alias ll='eza --icons'
+alias l='eza --icons'
 # Detailed listing
-alias l='eza -lh --icons --git'
-
+alias ll='eza -lh --icons --git'
 # Detailed listing including hidden files
 alias la='eza -lah --icons --git'
-
 # Tree view
 alias tree='eza --tree --icons'
 
