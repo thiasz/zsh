@@ -3,7 +3,7 @@
 add_newline = false
 
 # format = "$directory$os$git_branch$git_status$character"
-format = "$directory$git_branch$git_status$character"
+format = "$directory$git_branch$git_status$fill$python$aws$docker_context$jobs$line_break $character"
 
 [os]
 disabled = false
@@ -34,21 +34,33 @@ untracked  = "[?$count ](bold white)"
 deleted    = "[✘$count ](bold red)"
 conflicted = "[⚡$count ](bold red)"
 
-[nodejs]
-symbol = ""
-format = "[$symbol $version](green) "
+[fill]
+symbol = ' '
 
-[rust]
-symbol = ""
-format = "[$symbol $version](red) "
+[python]
+style = '#88C0D0'
+symbol = ' '
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+pyenv_version_name = true
+pyenv_prefix = ''
 
-[golang]
-symbol = ""
-format = "[$symbol $version](cyan) "
+[aws]
+symbol = ' '
+style = 'yellow'
+format = '[$symbol($profile )(\[$duration\] )]($style)'
 
-[php]
-symbol = ""
-format = "[$symbol $version](purple) "
+[docker_context]
+symbol = ' '
+style = 'fg:#06969A'
+format = '[$symbol]($style) $path'
+detect_files = ['docker-compose.yml', 'docker-compose.yaml', 'Dockerfile']
+detect_extensions = ['Dockerfile']
+
+[jobs]
+symbol = ' '
+style = 'red'
+number_threshold = 1
+format = '[$symbol]($style)'
 
 [character]
 success_symbol = "[❯](green)"
