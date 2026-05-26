@@ -104,6 +104,9 @@ source "$ZDOTDIR/plugins.zsh"
 # Prompt/theme
 source "$ZDOTDIR/prompt.zsh"
 
+if [[ -f ~/venv312/bin/activate ]]; then
+  source ~/venv312/bin/activate
+fi
 # =========================================================
 # Node / NVM
 # =========================================================

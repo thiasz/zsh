@@ -2,7 +2,8 @@
 
 add_newline = false
 
-format = "$directory$os$git_branch$git_status$nodejs$rust$golang$php $character"
+# format = "$directory$os$git_branch$git_status$character"
+format = "$directory$git_branch$git_status$character"
 
 [os]
 disabled = false
@@ -11,7 +12,7 @@ format = "[$symbol](#E95420)"
 [os.symbols]
 Ubuntu = "󰕈"
 Arch   = "󰣇"
-Macos  = ""
+Macos  = ""
 
 [directory]
 format            = "[$path](cyan) "
