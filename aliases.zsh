@@ -95,7 +95,7 @@ alias sncs='source ~/nso-6.4.6/ncsrc'
 # =========================================================
 alias mkb='make build'
 alias mkc='make testenv-cli'
-alias mkcl='make testenv-copy-log'
+alias mkcl='make testenv-copy-logs'
 alias mkk='make testenv-stop'
 alias mkl='make testenv-log-service'
 alias mkr='make testenv-rebuild'
