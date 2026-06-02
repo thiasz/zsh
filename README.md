@@ -38,7 +38,20 @@ git clone https://github.com/thiasz/zsh ~/.config/zsh
 
 **2. Point zsh at the config directory**
 
-Add the following to `~/.zshenv`:
+Add the following to /etc/zsh/zshenv:
+
+```sh
+if [[ -z "$XDG_CONFIG_HOME" ]]
+then
+    export XDG_CONFIG_HOME="$HOME/.config"
+fi
+
+if [[ -d "$XDG_CONFIG_HOME/zsh" ]]
+then
+    export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+fi
+```
+or Add the following to `~/.zshenv`:
 
 ```sh
 export ZDOTDIR="$HOME/.config/zsh"
